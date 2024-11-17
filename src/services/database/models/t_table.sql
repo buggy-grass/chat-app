@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS t_table (
+        'index' INTEGER PRIMARY KEY,
+        ts TEXT NOT NULL DEFAULT '45711171a118c1ec62749eaa747e27a053ba237aafb313e5f1fdbb3f8df9fd212c4a4effd17724f5b3a27a1d35bcbf43fe5ea047a2cdbd929ceecf3f4b6adf81',
+        es TEXT NOT NULL DEFAULT 'o27SFkTQLrwZKph4vDSO0HumNDuugtGL',
+        t_table_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        t_table_updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )

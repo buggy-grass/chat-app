@@ -1,0 +1,36 @@
+* {
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 0.6em;
+    border-radius: 10px;
+    margin-left: 5px; /* Scrollbar ile içerik arasında boşluk bırak */
+}
+
+#window-title-bar-drag-area{
+    -webkit-app-region: drag;
+}
+
+:not("window-title-bar-drag-area"){
+    -webkit-app-region: no-drag;
+}
+
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(31, 31, 31, 0.5);
+}
+
+*::-webkit-scrollbar-thumb {
+    cursor: "pointer";
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: 1px solid rgb(85, 85, 85);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    cursor: "pointer";
+    background-color: rgba(0, 0, 0, 0.1); /* Hover'da biraz daha belirgin */
+    cursor: pointer;
+    outline: 1px solid rgb(85, 85, 85);
+    border-radius: 10px;
+}
