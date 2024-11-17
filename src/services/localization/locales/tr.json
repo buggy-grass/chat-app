@@ -1,0 +1,744 @@
+{
+  "languages": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "messages": {
+    "unknownError": "Beklenmeyen bir hata oluştu."
+  },
+  "alert": {
+    "warning": "Uyarı",
+    "error": "Hata",
+    "info": "Bilgi"
+  },
+  "menu": {
+    "ribbonMenu": {
+      "imageEditor": "Fotoğraf Editörü",
+      "gcpEditor": "YKN/DN Editörü",
+      "openProjectFolder": "Proje Klasörünü Aç",
+      "languageOptions": "Dil Seçenekleri",
+      "userProfile": "Kullanıcı Profili",
+      "exit": "Çıkış Yap",
+      "project": "Proje",
+      "gcp": "YKN/DN",
+      "reCalculateGcp": "YKN Konumlarını Yeniden Oluştur",
+      "userTools": "Kullanıcı İşlemleri",
+      "showReport": "Raporu Göster",
+      "resetGcpInitial": "YKN/DN Sıfırla",
+      "gcpMarker": "YKN/DN İşaretleyici",
+      "appSettings": {
+        "view": "Görünüm",
+        "profile": "Kullanıcı Profili",
+        "account": "Hesap",
+        "settings": "Uygulama Ayarları"
+      },
+      "messages": {
+        "gcpRecalculated": "YKN konumları yeniden oluşturuldu",
+        "gcpRecalculatedWarning": "Gerekli dosyalar bulunamadı. Lütfen ön işlem yapınız.",
+        "gcpRecalculatedError": "YKN konumları yeniden oluşturulamadı",
+        "gcpAlertMessage": "YKN konumları yeniden hesaplanırsa YKN işaretlemeleriniz var ise silinecektir. Devam etmek istediğinize emin misiniz?",
+        "gcpMarkerHeader": "YKN/DN Hesaplarını Sıfırla",
+        "gcpMarkerDescription": "Bu işlem YKN'siz işlem için kullanılır. YKN işaretlemeleriniz var ise silinecektir. Devam etmek istediğinize emin misiniz? Bu işlemden sonra 'Yeniden Eşle ve Optimize Et' işlemi yapılmalıdır.",
+        "gcpClearSuccess": "Başarıyla sıfırlandı. 'Yeniden Eşle ve Optimize Et' işlemi yapılmalıdır."
+      }
+    },
+    "leftMenu": {
+      "home": "Giriş",
+      "orthophoto": "Ortofoto",
+      "process": "İşlem",
+      "processSettings": "İşlem Ayarları",
+      "log": "Log",
+      "flight": "Uçuş"
+    },
+    "toolbarMenu": {
+      "file": {
+        "name": "Dosya",
+        "createQualityReport": "Kalite Raporu Oluştur",
+        "newProject": "Yeni Proje",
+        "openProject": "Proje Aç",
+        "closeProject": "Proje Kapat",
+        "exit": "Çıkış"
+      },
+      "view": {
+        "name": "Görünüm",
+        "reload": "Yeniden Yükle",
+        "fullScreen": "Tam Ekran"
+      },
+      "messages": {
+        "openProject": "Proje açınız",
+        "reportCreated": "Rapor oluşturuldu",
+        "reportNotCreated": "Rapor oluşturulamadı"
+      }
+    },
+    "userProfile": {
+      "profile": "Kullanıcı Profili",
+      "appSettings": "Uygulama Ayarları",
+      "logout": "Çıkış"
+    }
+  },
+  "pages": {
+    "LoginPage": {
+      "welcome": "Hoşgeldiniz",
+      "usernamePlaceholder": "Kullanıcı Adınızı Giriniz",
+      "passwordPlaceholder": "Şifrenizi Giriniz",
+      "loginButton": "Giriş",
+      "account": "Hesabınız Yok mu?",
+      "accountInfo": "Eğer bir hesabınız yok ise demo talep ederek kullanıcı adı ve şifre alabilirsiniz.",
+      "demoRequest": "Demo Talep Et",
+      "loginInfo": "Giriş yapabilmek için lütfen kurumdan aldığınız kullanıcı adı ve şifrenizi giriniz.",
+      "notifications": {
+        "requiredUserPassword": "Kullanıcı adı ve şifre gereklidir.",
+        "invalidUserPassword": "Giriş başarısız. Lütfen kullanıcı adı ve şifrenizi kontrol edin."
+      }
+    },
+    "HomePage": {
+      "tabs": {
+        "projects": "Projeler",
+        "help": "Yardım",
+        "demoProjects": "Demo Projeler"
+      },
+      "components": {
+        "demoTab": {
+          "openDemo": "Demo Proje Aç",
+          "openDemoDescription": "Örnek bir veriseti ile process yapabilirsiniz."
+        },
+        "helpTab": {
+          "helpDoc": "Yardım Dokümanı",
+          "helpDocDescription": "Yardım dokümanına ulaşmak için tıklayınız."
+        },
+        "projectsTab": {
+          "newProject": "Yeni Proje Oluştur",
+          "newProjectDescription": "Yeni proje oluşturmak için tıklayınız.",
+          "openProject": "Proje Aç",
+          "openProjectDescription": "Kayıtlı bir proje açmak için tıklayınız."
+        },
+        "newProjectMain": {
+          "label": "Yeni Proje",
+          "buttons": {
+            "continue": "İleri",
+            "create": "Oluştur",
+            "cancel": "İptal",
+            "back": "Geri",
+            "help": "Yardım"
+          },
+          "error": {
+            "projectAlreadyExists": "Bu isimde bir proje zaten mevcut. Lütfen farklı bir isim seçiniz.",
+            "projectNameRequired": "Proje Adı Boş Bırakılamaz",
+            "projectPathRequired": "Proje Yolu Boş Bırakılamaz",
+            "atLeastImages": "En az 5 adet dosya yüklemelisiniz"
+          },
+          "tabs": {
+            "projectInfo": {
+              "desc": "Yeni proje oluşturmak için proje ismi belirleyiniz.",
+              "projectName": "Proje İsmi",
+              "folderPath": "Dosya Yolu",
+              "placeholderName": "İsimlendir",
+              "placeholderPath": "Kaydedilecek konumu seçiniz",
+              "suitable": "Uygun",
+              "alreadyInUse": "Kullanılıyor"
+            },
+            "rasterUploader": {
+              "label": "Fotoğraf Seç",
+              "desc": "En az 5 adet JPG veya JPEG formatında fotoğraf yüklenmelidir.",
+              "selectedImageCount": "Seçilen fotoğraf Sayısı",
+              "copiedPath": "Dosya Yolu Kopyalandı",
+              "upload": "Fotoğraf Ekle",
+              "addFolder": "Dizin Ekle",
+              "clearList": "Listeyi Temizle",
+              "preview": "Ön İzleme",
+              "filePath": "Dosya Yolu",
+              "selectProcess": "Yapmak istediğiniz işlemi seçiniz",
+              "zoom": "Büyüt",
+              "remove": "Sil"
+            },
+            "exifViewer": {
+              "label": "Görsel Özellikleri",
+              "imageName": "Fotoğraf Adı",
+              "lat": "Enlem",
+              "lon": "Boylam",
+              "alt": "Yükseklik",
+              "RTK": "RTK",
+              "unknown": "Bilinmiyor",
+              "exifSource": "EXIF/GPS Kaynağı",
+              "alerts": {
+                "warning": "Fotoğraf EXIF Bilgisi Bulunamadı.",
+                "usingImageEXIF": "Fotoğraf EXIF Bilgisi Kullanılıyor",
+                "usingCSVEXIF": "Dosyadan EXIF Bilgisi Kullanılıyor",
+                "unMatchedExifFile": "EXIF Dosyasıyla Fotoğraflar Uyuşmuyor."
+              },
+              "coordsHeader": "Koordinat Sistemi",
+              "coordinateSystem": "Koordinat Sistemi",
+              "selectCoords": "Koordinat Sistemini Seçiniz.",
+              "buttons": {
+                "fromFile": "Dosyadan EXIF'i Kullan",
+                "fromImage": "Fotoğraf EXIF'i Kullan"
+              }
+            }
+          },
+          "toast": {
+            "projectCreated": {
+              "header": "Proje Oluşturuldu.",
+              "description": ""
+            }
+          }
+        },
+        "photoEditor": {
+          "label": "Fotoğraf Editörü",
+          "clearAll": "Tümünü Temizle",
+          "buttons": {
+            "help": "Yardım",
+            "cancel": "İptal"
+          }
+        },
+        "projectRasters": {
+          "infoHeader": "Fotoğraf verilerini görüntüleyebilir veya silebilirsiniz.",
+          "totalImageCount": "Fotoğraf Sayısı",
+          "components": {
+            "projectRastersExifViewer": {
+              "buttons": {
+                "fromFile": "Dosya EXIF",
+                "fromImage": "Fotoğraf EXIF"
+              },
+              "alerts": {
+                "warning": "Fotoğraf EXIF Bilgisi Bulunamadı.",
+                "usingImageEXIF": "Fotoğraf EXIF Bilgisi Kullanılıyor",
+                "usingCSVEXIF": "Dosyadan EXIF Bilgisi Kullanılıyor"
+              },
+              "unknown": "Bilinmiyor",
+              "exifSource": "EXIF/GPS Kaynağı"
+            }
+          },
+          "tabs": {
+            "rasters": {
+              "label": "Fotoğraf",
+              "zoom": "Büyüt",
+              "remove": "Sil"
+            },
+            "exifs": {
+              "label": "Exif Bilgileri"
+            },
+            "path": {
+              "label": "Dosya Yolu"
+            }
+          },
+          "alert": {
+            "removeRaster": {
+              "header": "Projeden Fotoğraf Silme",
+              "description": "Seçilen fotoğraflar projeden silinecek devam etmek istediğinize emin misiniz?"
+            }
+          },
+          "toast": {
+            "copyPath": {
+              "header": "Dosya Yolu Kopyalandı.",
+              "description": ""
+            }
+          }
+        },
+        "userAlert": {
+          "buttons": {
+            "yes": "Evet",
+            "no": "Hayır"
+          }
+        },
+        "appClose": {
+          "text": "Uygulamayı kapatmak istediğinize emin misiniz?",
+          "buttons": {
+            "yes": "Evet",
+            "no": "Hayır"
+          }
+        }
+      },
+      "systemInformations": {
+        "family": "Familya",
+        "deviceName": "Sistem Adı",
+        "system": "Sistem",
+        "platform": "Platform",
+        "systemArchitecture": "Sistem Mimarisi",
+        "address": "Adres",
+        "memory": "Bellek",
+        "general": "Genel",
+        "wifi": "Wi-Fi",
+        "ethernet": "Ethernet",
+        "mac": "Mac"
+      },
+      "serviceSettings": {
+        "serviceURL": {
+          "header": "Servis URL",
+          "description": "Uygulamanın kullanacağı servis URL ayarını buradan yönetebilirsiniz.",
+          "label": "URL"
+        },
+        "serviceProtocol": {
+          "header": "Servis Protokolü",
+          "description": "Uygulamanın bağlanacağı servisin kullandığı protokolü buradan yönetebilirsiniz."
+        }
+      },
+      "userAccount": {
+        "logout": "Çıkış"
+      },
+      "processSettings": {
+        "gpu": {
+          "header": "Fotogrametrik İşlemde GPU Kullanımı",
+          "description": "Fotogrametrik işlemde GPU kullanımını buradan yönetebilirsiniz.",
+          "label": "GPU"
+        },
+        "toast": {
+          "gpuOn": {
+            "header": "GPU kullanımı aktifleştirildi.",
+            "description": ""
+          },
+          "gpuOff": {
+            "header": "GPU kullanımı devredışı bırakıldı.",
+            "description": ""
+          }
+        }
+      },
+      "viewSettings": {
+        "darkMode": {
+          "header": "Görünüm Modu",
+          "description": "Uygulamanın tema rengini buradan yönetebilirsiniz.",
+          "label": "Koyu Mod"
+        },
+        "viewZoom": {
+          "header": "Görsel Yakınlık",
+          "description": "Uygulamanın yazı ve nesnelerinin boyutlarını buradan yönetebilirsiniz."
+        },
+        "toast": {
+          "darkModeOn": {
+            "header": "Koyu tema kullanımına geçildi.",
+            "description": ""
+          },
+          "darkModeOff": {
+            "header": "Beyaz tema kullanımına geçildi.",
+            "description": ""
+          },
+          "windowZoomChanged": {
+            "header": "Yazı ve Obje boyutu değiştirildi.",
+            "description": ""
+          }
+        }
+      }
+    },
+    "SettingsPage": {
+      "menu": {
+        "appSettings": {
+          "view": "Görünüm",
+          "process": "İşlem Ayarları",
+          "services": "Servisler",
+          "system": "Sistem Bilgileri"
+        },
+        "profile": {
+          "account": "Hesap",
+          "profile": "Kullanıcı Profili",
+          "appSettings": "Uygulama Ayarları"
+        }
+      }
+    },
+    "OrthophotoPage": {
+      "notFoundOrthophoto": "Ortofoto verisi bulunmamaktadır. İşlem ile üretebilirsiniz."
+    },
+    "ProcessScreen": {
+      "label": "İşlem Ekranı",
+      "desc": "İşlemi bu ekrandan başlatabilirsiniz. Devam eden işlemin yüzdesini takip edebilirsiniz.",
+      "buttons": {
+        "start": "Başlat",
+        "cancel": "İptal",
+        "help": "Yardım"
+      },
+      "progressContinue": "İşlem devam ediyor",
+      "progressStart": "İşlem Başlatabilirsiniz",
+      "fastOrthophoto": "Hızlı Ortofoto",
+      "messages": {
+        "selectProcessType": "Lütfen işlem seçimi yapınız!",
+        "warning": "Uyarı",
+        "alreadyExist": "Sonuçlar zaten mevcut. Sonuçlar üzerine yazılacak, devam etmek istediğinize emin misiniz?"
+      },
+      "initialProcess": "Ön İşlem",
+      "process": "İşlem",
+      "toast": {
+        "warning": "Uyarı",
+        "description1": "Ön işlem tamamlanmadan işlem yapılamaz.",
+        "description2": "Fotogrametrik işlem başlatıldı",
+        "imageCount": "Fotoğraf sayısı minimum 5 olmalıdır"
+      },
+      "rematchAndOptimize": "Yeniden Eşle ve Optimize Et"
+    },
+    "QualityReport": {
+      "label": "Kalite Raporu",
+      "messages": {
+        "notFound": "Dosya Bulunamadı. Lütfen fotogrametrik işlem yapınız."
+      }
+    },
+    "TiffViewer": {
+      "rasterLoading": "Ortofoto Yükleniyor",
+      "orthophotoNotFound": "Ortofoto dosyası bulunamadı"
+    },
+    "projectList": {
+      "label": "Proje Listesi",
+      "buttons": {
+        "help": "Yardım",
+        "cancel": "İptal"
+      },
+      "actions": "İşlemler",
+      "diskSize": "Disk Boyutu",
+      "createdDate": "Oluşturulma Tarihi",
+      "name": "Adı",
+      "alert": {
+        "removeProject": {
+          "header": "Proje Sil",
+          "description": "Proje silinecek devam etmek istediğinize emin misiniz ?"
+        }
+      }
+    },
+    "logScreen": {
+      "label": "Log Ekranı",
+      "logTable": "Log Tablosu"
+    },
+    "flightScreen": {
+      "loading": "Uçuş Planı Yükleniyor",
+      "notFoundExif": "Exif Bilgisi Bulunamadı",
+      "gcp": "Yer Kontrol Noktası",
+      "cp": "Denetleme Noktası",
+      "image": "Fotoğraf"
+    },
+    "Viewer3D": {
+      "buttons": {
+        "pointCloud": "Nokta Bulutu",
+        "meshModel": "Mesh Model"
+      },
+      "loading": {
+        "pointCloud": {
+          "text": "Nokta Bulutu Yükleniyor..."
+        },
+        "meshModel": {
+          "loadingText": "Mesh Model Yükleniyor...",
+          "renderingText": "Render Ediliyor..."
+        }
+      }
+    }
+  },
+  "services": {
+    "DroNetDateManager": {
+      "minBefore": "Dk. önce",
+      "hoursBefore": "Saat önce",
+      "daysBefore": "Gün önce",
+      "monthsBefore": "Ay önce",
+      "yearsBefore": "Yıl önce"
+    },
+    "DroNetProjectManager": {
+      "toast": {
+        "projectClosed": {
+          "header": "Proje Kapatıldı.",
+          "description": ""
+        }
+      }
+    },
+    "DroNetLoginManager": {
+      "toast": {
+        "logOut": {
+          "header": "Oturum Kapatıldı.",
+          "description": ""
+        }
+      }
+    },
+    "DroNetLogLibrary": {
+      "stages": {
+        "dataset": {
+          "running": "Veriseti aşaması çalışıyor.",
+          "uploading": "Veriseti yükleniyor.",
+          "folderPath": "Dosya Yolu",
+          "loading": "Fotoğrafların veritabanı yükleniyor.",
+          "database": "Fotoğraflar veritabanına yazılıyor.",
+          "usableImage": "Kullanılabilir fotoğraflar bulundu.",
+          "finished": "Veriseti aşaması tamamlandı.",
+          "coordFileExists": "Koordinat dosyası bulundu."
+        },
+        "split": {
+          "running": "Veriseti bölme aşaması çalışıyor.",
+          "finished": "Veriseti bölme aşaması tamamlandı."
+        },
+        "merge": {
+          "running": "Veriseti birleştirme aşaması çalışıyor.",
+          "finished": "Veriseti birleştirme aşaması tamamlandı."
+        },
+        "opensfm": {
+          "folderPath": "Dosya Yolu",
+          "running": "Opensfm aşaması çalışıyor.",
+          "finished": "Opensfm aşaması tamamlandı.",
+          "imageListFound": "Fotoğraf listesi zaten mevcut OpenSFM başlangıç aşaması geçiliyor.",
+          "trackFileFound": "Geçerli bir opensfm parça dosyası bulundu.",
+          "metadataFileFound": "Geçerli bir meta veri dosyası bulundu.",
+          "reconstructionFileFound": "Geçerli bir reconstruction dosyası bulundu.",
+          "exportReconstructionFile": "Reconstruction dosyası dışa aktarılıyor.",
+          "featuresFound": "Fotoğraf eşlemeleri zaten mevcut.",
+          "nvmFileFound": "Geçerli bir NVM dosyası bulundu.",
+          "plyFound": "Geçerli bir PLY dosyası bulundu.",
+          "extractingSift": "Fotoğraflar eşleniyor."
+        },
+        "odm_filterpoints": {
+          "folderPath": "Dosya Yolu",
+          "running": "FilterPoints aşaması çalışıyor.",
+          "finished": "FilterPoints aşaması tamamlandı.",
+          "pcFileFound": "Geçerli bir nokta bulutu dosyası bulundu."
+        },
+        "odm_meshing": {
+          "folderPath": "Dosya Yolu",
+          "running": "Meshing aşaması çalışıyor.",
+          "finished": "Meshing aşaması tamamlandı.",
+          "mesh25FileFound": "Geçerli bir 2.5D Mesh dosyası bulundu."
+        },
+        "mvs_texturing": {
+          "folderPath": "Dosya Yolu",
+          "running": "MvsTexturing aşaması çalışıyor.",
+          "finished": "MvsTexturing aşaması tamamlandı.",
+          "textureFileFound": "Geçerli bir texture dosyası bulundu."
+        },
+        "odm_georeferencing": {
+          "folderPath": "Dosya Yolu",
+          "running": "Georeferencing aşaması çalışıyor.",
+          "finished": "Georeferencing aşaması tamamlandı.",
+          "georeferencedFileFound": "Geçerli bir georeferans dosyası bulundu."
+        },
+        "odm_dem": {
+          "running": "Dem aşaması çalışıyor.",
+          "finished": "Dem aşaması tamamlandı.",
+          "notGenerated": "DEM dosyası oluşturulmayacak."
+        },
+        "odm_orthophoto": {
+          "folderPath": "Dosya Yolu",
+          "running": "Ortofoto aşaması çalışıyor.",
+          "finished": "Ortofoto aşaması tamamlandı.",
+          "found": "Geçerli bir ortofoto bulundu."
+        },
+        "odm_report": {
+          "running": "Rapor aşaması çalışıyor.",
+          "finished": "Rapor aşaması tamamlandı."
+        },
+        "odm_postprocess": {
+          "running": "PostProcess aşaması çalışıyor.",
+          "finished": "PostProcess aşaması tamamlandı."
+        }
+      }
+    },
+    "AppSettingsManager": {
+      "core": "Çekirdek",
+      "day": "Gün",
+      "toast": {
+        "settingsSaved": {
+          "header": "Ayarlar Başarıyla Kaydedildi.",
+          "description": ""
+        }
+      }
+    },
+    "DroNetNcfgFileManager": {
+      "userNotFound": "Kullanıcı bulunamadı.",
+      "projectNotFound": "Proje bulunamadı.",
+      "projectCouldntUpdate": "Proje güncellenemedi."
+    },
+    "DroNetStartProcessManager": {
+      "markerNotFound": "GCP/Marker dosyası bulunamadı."
+    },
+    "DroNetGcpOpensfmManager": {
+      "initialFileNotDelete": "YKN/CP dosyası silinemedi.",
+      "markerNotDelete": "YKN/CP işaret dosyası silinemedi"
+    }
+  },
+  "key": "Merhaba Dünya!",
+  "window": {
+    "GcpWindow": {
+      "title": "YKN/DN Yöneticisi",
+      "toastMessages": {
+        "saveSuccess": "YKN/DN Dosyası Kaydedildi."
+      },
+      "component": {
+        "gcpTable": {
+          "labelHeaders": {
+            "gcp": "Yer Kontrol Noktası",
+            "cp": "Denetim Noktası",
+            "information": "Bilgilendirme",
+            "gcpCpTable": "YKN/DN Tablosu",
+            "gcpCpCoordSys": "YKN/DN Koordinat Sistemi"
+          },
+          "table": {
+            "name": "Adı",
+            "type": "Tipi"
+          },
+          "gcp": "YKN",
+          "cp": "DN",
+          "coordSys": "Koordinat Sistemi",
+          "selectCoords": "Koordinat Sistemini Seçiniz.",
+          "gcpDesc": "Yer Kontrol Noktaları dengeleme işlemine alınacak ve raporda gösterilecektir. Hassasiyeti arttırmak için en az 2 nokta ile işlem yapılması önerilir.",
+          "cpDesc": "Denetim Noktaları dengeleme işlemine alınmayacak ve dengeleme sonrasında raporda gösterilecektir.",
+          "gcpInput": "YKN/DN İçeri Aktar",
+          "cancel": "İptal",
+          "help": "Yardım",
+          "save": "Kaydet",
+          "addPoint": "Nokta Ekle",
+          "deletePoint": "Nokta Sil"
+        },
+        "gcpPrompt": {
+          "title": "YKN/DN Noktalarını İçeri Aktar",
+          "coordXYZ": "Koordinatları Düzenle",
+          "gcpCpFile": "YKN/DN Dosyası",
+          "browse": "Gözat",
+          "gcpCpInput": "Dosyayı İçeriye Aktar",
+          "cancel": "İptal"
+        }
+      }
+    },
+    "gcpMarkerWindow": {
+      "title": "YKN/DN İşaretleyici",
+      "component": {
+        "gcpCpTable": {
+          "gcp": "Yer Kontrol Noktası (YKN)",
+          "cp": "Denetleme Noktası (DN)",
+          "east": "Doğu",
+          "north": "Kuzey",
+          "elevation": "Yükseklik"
+        },
+        "gcpMarkerMain": {
+          "help": "Yardım",
+          "cancel": "İptal",
+          "save": "Kaydet",
+          "success": "YKN Dosyası Kayıt Edildi"
+        },
+        "gcpImageTable": {
+          "imageList": "Fotoğraf Listesi"
+        }
+      }
+    },
+    "processSettingsWindow": {
+      "title": "İşlem Ayarları",
+      "component": {
+        "processSettingsMain": {
+          "sections": {
+            "initialProcess": "Ön İşlem",
+            "process": "Nokta Bulutu, Mesh Model",
+            "dem": "SYM, SAM, Ortofoto"
+          },
+          "help": "Yardım",
+          "cancel": "İptal",
+          "save": "Kaydet",
+          "toast": "İşlem Ayarları Kaydedildi"
+        },
+        "orthophotoDTM": {
+          "components": {
+            "orthophoto": {
+              "orthoResolution": {
+                "header": "Ortofoto Çözünürlüğü",
+                "description": "Ortofoto çözünürlüğü cm/piksel cinsindendir. Bu değer, yer örnekleme mesafesi (GSD) tahminiyle sınırlıdır."
+              },
+              "orthoCompression": {
+                "header": "Ortofoto Sıkıştırma",
+                "description": "Ortofoto için kullanılacak sıkıştırma tipini ayarlayabilirsiniz."
+              },
+              "recomSettings": "Önerilen Ayarlar",
+              "pxAndCm": "cm/piksel",
+              "px": "piksel"
+            },
+            "dsmAndDtm": {
+              "demResolution": {
+                "header": "SAM/SYM Çözünürlüğü",
+                "description": "SAM/SYM çözünürlüğü cm/pikseldir. Bu değerin bir yer örnekleme mesafesi (GSD) tahmini ile sınırlı olduğunu unutmayın."
+              },
+              "demDecimation": {
+                "header": "SAM/SYM Nokta Seyrekliği",
+                "description": "SAM/SYM (Dijital Yükseklik Modeli) oluşturulmadan önce noktaları seyrekleştirir. 1, seyreltme yapılmaz (tam kalite) anlamına gelir. 100, noktaların yaklaşık %99’unu seyreltir. Çok büyük veri kümelerinde SAM/SYM sonuçlarının oluşturulmasını hızlandırmak için kullanışlıdır."
+              },
+              "demGapFill": {
+                "header": "SAM/SYM Boşlukları Doldurma",
+                "description": "Boşluklar içeren alanları doldurmak için kullanılan adım sayısı. Boşluk doldurmayı devre dışı bırakmak için 0 olarak ayarlayın."
+              },
+              "recomSettings": "Önerilen Ayarlar",
+              "pxAndCm": "cm/piksel",
+              "px": "piksel"
+            }
+          },
+          "tabs": {
+            "orthophoto": "Ortofoto",
+            "dem": "SAM ve SYM"
+          }
+        },
+        "process": {
+          "component": {
+            "pointCloud": {
+              "pointCloudQuality": {
+                "header": "Nokta Bulutu Kalitesi",
+                "description": "Nokta bulutu kalitesini ayarlayın. Daha yüksek kalite, daha iyi ve daha yoğun nokta bulutları üretir, ancak daha fazla bellek gerektirir ve daha uzun sürer. Kalitedeki her artış, işlem süresini yaklaşık 4 kat artırır."
+              },
+              "pointCloudFilter": {
+                "header": "Nokta Bulutu Filtreleme",
+                "description": "Nokta bulutunu, yerel ortalamadan N standart sapmadan fazla sapma gösteren noktaları kaldırarak filtreler. Filtrelemeyi devre dışı bırakmak için 0 olarak ayarlayın."
+              },
+              "pointCloudRectify": {
+                "header": "Nokta Bulutu Hizalama",
+                "description": "Nokta bulutunda zemin düzeltmesi yapın. Bu, yanlış sınıflandırılmış zemin noktalarının yeniden sınıflandırılacağı ve boşlukların doldurulacağı anlamına gelir. SAM(Sayısal Arazi Modelleri) oluşturmak için kullanışlıdır."
+              },
+              "pointCloudClassify": {
+                "header": "Nokta Bulutu Sınıflandırma",
+                "description": "Nokta bulutu çıktıları sınıflandırın. Bu seçeneğin davranışını SAM ve SYM parametrelerini ayarlayarak kontrol edebilirsiniz."
+              },
+              "pointCloudSample": {
+                "header": "Nokta Bulutu Örnekleme",
+                "description": "Nokta bulutunu, yalnızca N yarıçapındaki (metre cinsinden) tek bir noktayı tutarak filtreler. Bu, nokta bulutunun çıktı çözünürlüğünü sınırlamak ve yinelenen noktaları kaldırmak için faydalı olabilir. Örneklemeyi devre dışı bırakmak için 0 olarak ayarlayın."
+              },
+              "pointCloudQualities": {
+                "ultra": "Çok Yüksek",
+                "high": "Yüksek",
+                "medium": "Orta",
+                "low": "Düşük",
+                "veryLow": "Çok Düşük"
+              },
+              "recomSettings": "Önerilen Ayarlar",
+              "opened": "Açık",
+              "closed": "Kapalı"
+            },
+            "meshModel": {
+              "meshOctreeDepth": {
+                "header": "Mesh Oktree Derinliği",
+                "description": "Mesh yeniden inşasında kullanılan oktree derinliği, daha fazla vertex elde etmek için artırılır, önerilen değerler 8-12'dir."
+              },
+              "meshSize": {
+                "header": "Mesh Boyutu",
+                "description": "Mesh çıktısının maksimum köşe sayısını belirleyin."
+              },
+              "texturingKeepUnseenFaces": {
+                "header": "Doku Koruma",
+                "description": "Hiçbir kamerada görünmeyen Mesh dokularını korumayı etkinleştirir."
+              },
+              "useThreeDMesh": {
+                "header": "3D Mesh Kullanımı",
+                "description": "Ortophoto'yu hesaplamak için 2.5D mesh yerine tam 3D mesh kullanın. Bu seçenek biraz daha hızlıdır ve düz alanlarda benzer sonuçlar verir."
+              },
+              "recomSettings": "Önerilen Ayarlar",
+              "opened": "Açık",
+              "closed": "Kapalı"
+            },
+            "initialProcess": {
+              "featureQuality": {
+                "header": "Eşleme Kalitesi",
+                "description": "Eşleme kalitesini buradan ayarlayabilirsiniz. Kalite artışıyla birlikte daha fazla bellek, işlemci kullanır ve kaliteyle doğru orantılı şekilde işlem süresi uzar."
+              },
+              "minNumFeatures": {
+                "header": "Minimum Eşleme Sayısı",
+                "description": "Her görüntü için minimum eşleme sayısını ayarlayabilirsiniz. Minimum eşleme sayısını artırmak, görüntüler arasında daha fazla eşleşme bulmak için faydalı olabilir ve az örtüşen ya da yetersiz özellik içeren bölgelerin yeniden yapılandırılmasını mümkün kılabilir. Ancak, minimum eşleme sayısını artırmak işlem süresini artırır."
+              },
+              "featureQualities": {
+                "ultra": "Çok Yüksek",
+                "high": "Yüksek",
+                "medium": "Orta",
+                "low": "Düşük",
+                "veryLow": "Çok Düşük"
+              },
+              "recomSettings": "Önerilen Ayarlar"
+            }
+          },
+          "tabs": {
+            "pointCloud": "Nokta Bulutu",
+            "meshModel": "Mesh Model"
+          }
+        }
+      }
+    }
+  }
+}

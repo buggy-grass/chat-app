@@ -1,0 +1,744 @@
+{
+  "languages": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "messages": {
+    "unknownError": "An unexpected error occurred."
+  },
+  "alert": {
+    "warning": "Warning",
+    "error": "Error",
+    "info": "Info"
+  },
+  "menu": {
+    "ribbonMenu": {
+      "imageEditor": "Image Editor",
+      "gcpEditor": "GCP/CP Editor",
+      "openProjectFolder": "Open Project Folder",
+      "languageOptions": "Language Options",
+      "userProfile": "User Profile",
+      "exit": "Exit",
+      "project": "Project",
+      "gcp": "GCP/CP",
+      "reCalculateGcp": "Recalculate GCP Locations",
+      "userTools": "User Tools",
+      "showReport": "Show Report",
+      "resetGcpInitial": "Reset GCP/CP",
+      "gcpMarker": "GCP/CP Marker",
+      "appSettings": {
+        "view": "View",
+        "profile": "User Profile",
+        "account": "Account",
+        "settings": "Application Settings"
+      },
+      "messages": {
+        "gcpRecalculated": "GCP locations have been recalculated",
+        "gcpRecalculatedWarning": "Required files were not found. Please perform preprocessing.",
+        "gcpRecalculatedError": "GCP locations could not be recalculated.",
+        "gcpAlertMessage": "If GCP locations are recalculated, any existing YKN markings will be deleted. Are you sure you want to continue?",
+        "gcpMarkerHeader": "Reset GCP/CP Calculations",
+        "gcpMarkerDescription": "This action is used for processing without GCP. If you have GCP markings, they will be deleted. Are you sure you want to proceed? After this action, 'Rematch and Optimize' must be performed.",
+        "gcpClearSuccess": "Successfully reset. 'Rematch and Optimize' must be performed."
+      }
+    },
+    "leftMenu": {
+      "home": "Home",
+      "orthophoto": "Orthophoto",
+      "process": "Process",
+      "processSettings": "Process Settings",
+      "log": "Log",
+      "flight": "Flight"
+    },
+    "toolbarMenu": {
+      "file": {
+        "name": "File",
+        "createQualityReport": "Create Quality Report",
+        "newProject": "New Project",
+        "openProject": "Open Project",
+        "closeProject": "Close Project",
+        "exit": "Exit"
+      },
+      "view": {
+        "name": "View",
+        "reload": "Reload",
+        "fullScreen": "Full Screen"
+      },
+      "messages": {
+        "openProject": "Open project",
+        "reportCreated": "Report created",
+        "reportNotCreated": "Report could not be created"
+      }
+    },
+    "userProfile": {
+      "profile": "User Profile",
+      "appSettings": "App Settings",
+      "logout": "Logout"
+    }
+  },
+  "pages": {
+    "LoginPage": {
+      "welcome": "Welcome",
+      "usernamePlaceholder": "Enter your username",
+      "passwordPlaceholder": "Enter your password",
+      "loginButton": "Login",
+      "account": "Don't have an account?",
+      "accountInfo": "If you don't have an account, you can request a demo to get a username and password.",
+      "demoRequest": "Request Demo",
+      "loginInfo": "Please enter your username and password provided by your institution to login.",
+      "notifications": {
+        "requiredUserPassword": "Username and password are required.",
+        "invalidUserPassword": "Login failed. Please check your username and password."
+      }
+    },
+    "HomePage": {
+      "tabs": {
+        "projects": "Projects",
+        "help": "Help",
+        "demoProjects": "Demo Projects"
+      },
+      "components": {
+        "demoTab": {
+          "openDemo": "Open Demo Project",
+          "openDemoDescription": "You can process with a sample dataset."
+        },
+        "helpTab": {
+          "helpDoc": "Help Document",
+          "helpDocDescription": "Click here to access the help document."
+        },
+        "projectsTab": {
+          "newProject": "Create New Project",
+          "newProjectDescription": "Click here to create a new project.",
+          "openProject": "Open Project",
+          "openProjectDescription": "Click here to open a saved project."
+        },
+        "newProjectMain": {
+          "label": "New Project",
+          "buttons": {
+            "continue": "Next",
+            "create": "Create",
+            "cancel": "Cancel",
+            "back": "Back",
+            "help": "Help"
+          },
+          "error": {
+            "projectAlreadyExists": "A project with this name already exists. Please choose a different name.",
+            "projectNameRequired": "Project name cannot be empty.",
+            "projectPathRequired": "Project path cannot be empty.",
+            "atLeastImages": "You must upload at least 5 files."
+          },
+          "tabs": {
+            "projectInfo": {
+              "desc": "Please specify a project name to create a new project.",
+              "projectName": "Project Name",
+              "folderPath": "Folder Path",
+              "placeholderName": "Name Your Project",
+              "placeholderPath": "Select the location to save",
+              "suitable": "Suitable",
+              "alreadyInUse": "Already in use"
+            },
+            "rasterUploader": {
+              "label": "Select Image",
+              "desc": "At least 5 images in JPG or JPEG format must be uploaded.",
+              "selectedImageCount": "Selected Image Count",
+              "copiedPath": "File Path Copied",
+              "upload": "Add Images",
+              "addFolder": "Add Folder",
+              "clearList": "Clear List",
+              "preview": "Preview",
+              "filePath": "File Path",
+              "selectProcess": "Select the process you want to perform",
+              "zoom": "Zoom",
+              "remove": "Remove"
+            },
+            "exifViewer": {
+              "label": "Image Properties",
+              "imageName": "Image Name",
+              "lat": "Latitude",
+              "lon": "Longitude",
+              "alt": "Altitude",
+              "RTK": "RTK",
+              "unknown": "Unknown",
+              "exifSource": "EXIF/GPS Source",
+              "alerts": {
+                "warning": "No EXIF Data Found.",
+                "usingImageEXIF": "Using Image EXIF.",
+                "usingCSVEXIF": "Using File EXIF.",
+                "unMatchedExifFile": "EXIF File Mismatch."
+              },
+              "coordsHeader": "Coordinate System",
+              "coordinateSystem": "Coordinate System",
+              "selectCoords": "Select a Coordinate System.",
+              "buttons": {
+                "fromFile": "Use EXIF from File",
+                "fromImage": "Use Image EXIF"
+              }
+            }
+          },
+          "toast": {
+            "projectCreated": {
+              "header": "Project created.",
+              "description": ""
+            }
+          }
+        },
+        "photoEditor": {
+          "label": "Photo Editor",
+          "clearAll": "Clear All",
+          "buttons": {
+            "help": "Help",
+            "cancel": "Cancel"
+          }
+        },
+        "projectRasters": {
+          "infoHeader": "You can view or delete photo data.",
+          "totalImageCount": "Number of Photos",
+          "components": {
+            "projectRastersExifViewer": {
+              "buttons": {
+                "fromFile": "File EXIF",
+                "fromImage": "Image EXIF"
+              },
+              "alerts": {
+                "warning": "No EXIF Data Found.",
+                "usingImageEXIF": "Using Image EXIF.",
+                "usingCSVEXIF": "Using File EXIF."
+              },
+              "unknown": "Unknown",
+              "exifSource": "EXIF/GPS Source"
+            }
+          },
+          "tabs": {
+            "rasters": {
+              "label": "Photo",
+              "zoom": "Zoom",
+              "remove": "Delete"
+            },
+            "exifs": {
+              "label": "Exif Data"
+            },
+            "path": {
+              "label": "File Path"
+            }
+          },
+          "alert": {
+            "removeRaster": {
+              "header": "Delete Photo from Project",
+              "description": "Selected photos will be deleted from the project. Are you sure you want to proceed?"
+            }
+          },
+          "toast": {
+            "copyPath": {
+              "header": "File path copied.",
+              "description": ""
+            }
+          }
+        },
+        "userAlert": {
+          "buttons": {
+            "yes": "Yes",
+            "no": "No"
+          }
+        },
+        "appClose": {
+          "text": "Are you sure you want to close the application?",
+          "buttons": {
+            "yes": "Yes",
+            "no": "No"
+          }
+        }
+      },
+      "systemInformations": {
+        "family": "Family",
+        "deviceName": "System Name",
+        "system": "System",
+        "platform": "Platform",
+        "systemArchitecture": "System Architecture",
+        "address": "Address",
+        "memory": "Memory",
+        "general": "General",
+        "wifi": "Wi-Fi",
+        "ethernet": "Ethernet",
+        "mac": "Mac"
+      },
+      "userAccount": {
+        "logout": "Logout"
+      },
+      "serviceSettings": {
+        "serviceURL": {
+          "header": "Service URL",
+          "description": "You can manage the service URL setting that the application will use from here.",
+          "label": "URL"
+        },
+        "serviceProtocol": {
+          "header": "Service Protocol",
+          "description": "You can manage the protocol used by the service that the application will connect to from here."
+        }
+      },
+      "processSettings": {
+        "gpu": {
+          "header": "GPU Usage in Photogrammetric Processing",
+          "description": "You can manage the use of the GPU in photogrammetric processing here.",
+          "label": "GPU"
+        },
+        "toast": {
+          "gpuOn": {
+            "header": "GPU usage enabled.",
+            "description": ""
+          },
+          "gpuOff": {
+            "header": "GPU usage disabled.",
+            "description": ""
+          }
+        }
+      },
+      "viewSettings": {
+        "darkMode": {
+          "header": "View Mode",
+          "description": "You can manage the application's theme color here.",
+          "label": "Dark Mode"
+        },
+        "viewZoom": {
+          "header": "Visual Zoom",
+          "description": "You can manage the size of text and objects in the application here."
+        },
+        "toast": {
+          "darkModeOn": {
+            "header": "Switched to Dark Mode.",
+            "description": ""
+          },
+          "darkModeOff": {
+            "header": "Switched to Light Mode.",
+            "description": ""
+          },
+          "windowZoomChanged": {
+            "header": "Text and object size changed.",
+            "description": ""
+          }
+        }
+      }
+    },
+    "SettingsPage": {
+      "menu": {
+        "appSettings": {
+          "view": "View",
+          "process": "Process Settings",
+          "services": "Services",
+          "system": "System Information"
+        },
+        "profile": {
+          "account": "Account",
+          "profile": "User Profile",
+          "appSettings": "Application Settings"
+        }
+      }
+    },
+    "OrthophotoPage": {
+      "notFoundOrthophoto": "No orthophoto data found. You can generate it with the process."
+    },
+    "ProcessScreen": {
+      "label": "Process Screen",
+      "desc": "You can start the process from this screen. You can track the percentage of the ongoing process.",
+      "buttons": {
+        "start": "Start",
+        "cancel": "Cancel",
+        "help": "Help"
+      },
+      "progressContinue": "Process continues",
+      "progressStart": "You can start the process",
+      "fastOrthophoto": "Fast Orthophoto",
+      "messages": {
+        "selectProcessType": "Please select the process type!",
+        "warning": "Warning",
+        "alreadyExist": "Results already exist. The results will be overwritten. Are you sure you want to continue?"
+      },
+      "initialProcess": "Initial Process",
+      "process": "Process",
+      "toast": {
+        "warning": "Warning",
+        "description1": "Processing cannot be performed before initial processing is completed.",
+        "description2": "Photogrammetric processing started",
+        "imageCount": "The number of photos must be at least 5"
+      },
+      "rematchAndOptimize": "Rematch and Optimize"
+    },
+    "QualityReport": {
+      "label": "Quality Report",
+      "messages": {
+        "notFound": "File Not Found. Please perform photogrammetric processing."
+      }
+    },
+    "TiffViewer": {
+      "rasterLoading": "Orthophoto Loading",
+      "orthophotoNotFound": "Orthophoto file not found"
+    },
+    "projectList": {
+      "label": "Project List",
+      "buttons": {
+        "help": "Help",
+        "cancel": "Cancel"
+      },
+      "actions": "Actions",
+      "diskSize": "Disk Size",
+      "createdDate": "Created Date",
+      "name": "Name",
+      "alert": {
+        "removeProject": {
+          "header": "Delete Project",
+          "description": "The project will be deleted. Are you sure you want to proceed?"
+        }
+      }
+    },
+    "logScreen": {
+      "label": "Log Screen",
+      "logTable": "Log Table"
+    },
+    "flightScreen": {
+      "loading": "Loading Flight Plan",
+      "notFoundExif": "No EXIF Data Found",
+      "gcp": "Ground Control Point",
+      "cp": "Control Point",
+      "image": "Image"
+    },
+    "Viewer3D": {
+      "buttons": {
+        "pointCloud": "Point Cloud",
+        "meshModel": "Mesh Model"
+      },
+      "loading": {
+        "pointCloud": {
+          "text": "Loading Point Cloud..."
+        },
+        "meshModel": {
+          "loadingText": "Loading Mesh Model...",
+          "renderingText": "Rendering..."
+        }
+      }
+    }
+  },
+  "services": {
+    "DroNetDateManager": {
+      "minBefore": "Min. ago",
+      "hoursBefore": "Hours ago",
+      "daysBefore": "Days ago",
+      "monthsBefore": "Months ago",
+      "yearsBefore": "Years ago"
+    },
+    "DroNetProjectManager": {
+      "toast": {
+        "projectClosed": {
+          "header": "Project closed.",
+          "description": ""
+        }
+      }
+    },
+    "DroNetLoginManager": {
+      "toast": {
+        "logOut": {
+          "header": "Session closed.",
+          "description": ""
+        }
+      }
+    },
+    "DroNetLogLibrary": {
+      "stages": {
+        "dataset": {
+          "running": "Dataset stage is running.",
+          "uploading": "Dataset is being uploaded.",
+          "folderPath": "Folder Path",
+          "loading": "Loading photos into the database.",
+          "database": "Writing photos to the database.",
+          "usableImage": "Usable photos found.",
+          "finished": "Dataset stage is finished.",
+          "coordFileExists": "Coordinate file exists."
+        },
+        "split": {
+          "running": "Dataset split stage is running.",
+          "finished": "Dataset split stage is finished."
+        },
+        "merge": {
+          "running": "Dataset merge stage is running.",
+          "finished": "Dataset merge stage is finished."
+        },
+        "opensfm": {
+          "folderPath": "Folder Path",
+          "running": "Opensfm stage is running.",
+          "finished": "Opensfm stage is finished.",
+          "imageListFound": "Photo list already exists. Skipping OpenSFM initialization.",
+          "trackFileFound": "Valid OpenSFM track file found.",
+          "metadataFileFound": "Valid metadata file found.",
+          "reconstructionFileFound": "Valid reconstruction file found.",
+          "exportReconstructionFile": "Exporting reconstruction file.",
+          "featuresFound": "Photo matches already exist.",
+          "nvmFileFound": "Valid NVM file found.",
+          "plyFound": "Valid PLY file found.",
+          "extractingSift": "Matching photos."
+        },
+        "odm_filterpoints": {
+          "folderPath": "Folder Path",
+          "running": "FilterPoints stage is running.",
+          "finished": "FilterPoints stage is finished.",
+          "pcFileFound": "Valid point cloud file found."
+        },
+        "odm_meshing": {
+          "folderPath": "Folder Path",
+          "running": "Meshing stage is running.",
+          "finished": "Meshing stage is finished.",
+          "mesh25FileFound": "Valid 2.5D Mesh file found."
+        },
+        "mvs_texturing": {
+          "folderPath": "Folder Path",
+          "running": "MvsTexturing stage is running.",
+          "finished": "MvsTexturing stage is finished.",
+          "textureFileFound": "Valid texture file found."
+        },
+        "odm_georeferencing": {
+          "folderPath": "Folder Path",
+          "running": "Georeferencing stage is running.",
+          "finished": "Georeferencing stage is finished.",
+          "georeferencedFileFound": "Valid georeferenced file found."
+        },
+        "odm_dem": {
+          "running": "DEM stage is running.",
+          "finished": "DEM stage is finished.",
+          "notGenerated": "DEM file will not be generated."
+        },
+        "odm_orthophoto": {
+          "folderPath": "Folder Path",
+          "running": "Orthophoto stage is running.",
+          "finished": "Orthophoto stage is finished.",
+          "found": "Valid orthophoto found."
+        },
+        "odm_report": {
+          "running": "Report stage is running.",
+          "finished": "Report stage is finished."
+        },
+        "odm_postprocess": {
+          "running": "PostProcess stage is running.",
+          "finished": "PostProcess stage is finished."
+        }
+      }
+    },
+    "AppSettingsManager": {
+      "core": "Core",
+      "day": "Day",
+      "toast": {
+        "settingsSaved": {
+          "header": "Settings saved successfully.",
+          "description": ""
+        }
+      }
+    },
+    "DroNetNcfgFileManager": {
+      "userNotFound": "User not found.",
+      "projectNotFound": "Project not found.",
+      "projectCouldntUpdate": "Project couldn't be updated."
+    },
+    "DroNetStartProcessManager": {
+      "markerNotFound": "GCP/Marker file not found."
+    },
+    "DroNetGcpOpensfmManager": {
+      "initialFileNotDelete": "GCP/CP file could not be deleted.",
+      "markerNotDelete": "GCP/CP marker file could not be deleted."
+    }
+  },
+  "key": "Hello World!",
+  "window": {
+    "GcpWindow": {
+      "title": "GCP/CP Manager",
+      "toastMessages": {
+        "saveSuccess": "GCP/CP File Saved."
+      },
+      "component": {
+        "gcpTable": {
+          "labelHeaders": {
+            "gcp": "Ground Control Point",
+            "cp": "Check Point",
+            "information": "Information",
+            "gcpCpTable": "GCP/CP Table",
+            "gcpCpCoordSys": "GCP/CP Coordinate System"
+          },
+          "table": {
+            "name": "Name",
+            "type": "Type"
+          },
+          "gcp": "GCP",
+          "cp": "CP",
+          "coordSys": "Coordinate System",
+          "selectCoords": "Select Coordinate System.",
+          "gcpDesc": "Ground Control Points will be included in the adjustment process and shown in the report. It is recommended to use at least 2 points for increased accuracy.",
+          "cpDesc": "Check Points will not be included in the adjustment process but will be shown in the report after adjustment.",
+          "gcpInput": "Import GCP/CP",
+          "cancel": "Cancel",
+          "help": "Help",
+          "save": "Save",
+          "addPoint": "Add Point",
+          "deletePoint": "Delete Point"
+        },
+        "gcpPrompt": {
+          "title": "Import GCP/CP Points",
+          "coordXYZ": "Coordinate Format",
+          "gcpCpFile": "GCP/CP File",
+          "browse": "Browse",
+          "gcpCpInput": "Import File",
+          "cancel": "Cancel"
+        }
+      }
+    },
+    "gcpMarkerWindow": {
+      "title": "GCP/CP Marker",
+      "component": {
+        "gcpCpTable": {
+          "gcp": "Ground Control Point (GCP)",
+          "cp": "Check Point (CP)",
+          "east": "East",
+          "north": "North",
+          "elevation": "Elevation"
+        },
+        "gcpMarkerMain": {
+          "help": "Help",
+          "cancel": "Cancel",
+          "save": "Save",
+          "success": "GCP File Saved"
+        },
+        "gcpImageTable": {
+          "imageList": "Image List"
+        }
+      }
+    },
+    "processSettingsWindow": {
+      "title": "Process Settings",
+      "component": {
+        "processSettingsMain": {
+          "sections": {
+            "initialProcess": "Initial Process",
+            "process": "Point Cloud, Mesh Model",
+            "dem": "DSM, DTM, Orthophoto"
+          },
+          "help": "Help",
+          "cancel": "Cancel",
+          "save": "Save",
+          "toast": "Process Settings Saved"
+        },
+        "orthophotoDTM": {
+          "components": {
+            "orthophoto": {
+              "orthoResolution": {
+                "header": "Orthophoto Resolution",
+                "description": "Orthophoto resolution is in cm/pixel. This value is limited by the Ground Sample Distance (GSD) estimate."
+              },
+              "orthoCompression": {
+                "header": "Orthophoto Compression",
+                "description": "You can set the compression type to be used for the orthophoto."
+              },
+              "recomSettings": "Recommended Settings",
+              "pxAndCm": "cm/pixel",
+              "px": "pixel"
+            },
+            "dsmAndDtm": {
+              "demResolution": {
+                "header": "DEM Resolution",
+                "description": "DSM/DTM resolution is in cm/pixel. Remember, this value is limited by a Ground Sample Distance (GSD) estimate."
+              },
+              "demDecimation": {
+                "header": "DEM Point Decimation",
+                "description": "Decimates points before creating the DEM (Digital Elevation Model). 1 means no decimation (full quality). 100 decimates about 99% of points. Useful for speeding up DEM creation in large datasets."
+              },
+              "demGapFill": {
+                "header": "DEM Gap Filling",
+                "description": "The number of steps used to fill gaps in areas containing voids. Set to 0 to disable gap filling."
+              },
+              "recomSettings": "Recommended Settings",
+              "pxAndCm": "cm/pixel",
+              "px": "pixel"
+            }
+          },
+          "tabs": {
+            "orthophoto": "Orthophoto",
+            "dem": "DTM and DSM"
+          }
+        },
+        "process": {
+          "component": {
+            "pointCloud": {
+              "pointCloudQuality": {
+                "header": "Point Cloud Quality",
+                "description": "Adjust the point cloud quality for better photogrammetric analysis. Higher quality results in denser and more accurate point clouds, which improves the reconstruction but requires more memory and processing time. Each increase in quality approximately quadruples the processing time."
+              },
+              "pointCloudFilter": {
+                "header": "Point Cloud Filtering",
+                "description": "Filters the point cloud by removing outliers that deviate by more than N standard deviations from the local mean, which can improve the precision of photogrammetric results. Set to 0 to disable filtering."
+              },
+              "pointCloudRectify": {
+                "header": "Point Cloud Rectification",
+                "description": "Rectify the ground in the point cloud for better photogrammetric surface modeling. Misclassified ground points will be reclassified, and gaps will be filled. Essential for creating accurate Digital Terrain Models (DTMs)."
+              },
+              "pointCloudClassify": {
+                "header": "Point Cloud Classification",
+                "description": "Classify point cloud outputs based on photogrammetric categories such as vegetation, buildings, and ground. The behavior can be controlled by adjusting the DTM and DSM parameters."
+              },
+              "pointCloudSample": {
+                "header": "Point Cloud Sampling",
+                "description": "Resample the point cloud by retaining only a single point within an N-meter radius. Useful for reducing redundancy in dense point clouds for faster processing in photogrammetric workflows. Set to 0 to disable sampling."
+              },
+              "pointCloudQualities": {
+                "ultra": "Ultra High",
+                "high": "High",
+                "medium": "Medium",
+                "low": "Low",
+                "veryLow": "Very Low"
+              },
+              "recomSettings": "Recommended Settings",
+              "opened": "Opened",
+              "closed": "Closed"
+            },
+            "meshModel": {
+              "meshOctreeDepth": {
+                "header": "Mesh Octree Depth",
+                "description": "The octree depth used in mesh reconstruction, increased for more vertices; recommended values are between 8-12."
+              },
+              "meshSize": {
+                "header": "Mesh Size",
+                "description": "Specify the maximum number of vertices for the mesh output."
+              },
+              "texturingKeepUnseenFaces": {
+                "header": "Texture Protection",
+                "description": "Enables preservation of mesh textures that are not seen by any camera."
+              },
+              "useThreeDMesh": {
+                "header": "Use 3D Mesh",
+                "description": "Use a full 3D mesh instead of a 2.5D mesh to compute the orthophoto. This option is slightly faster and yields similar results on flat areas."
+              },
+              "recomSettings": "Recommended Settings",
+              "opened": "Opened",
+              "closed": "Closed"
+            },
+            "initialProcess": {
+              "featureQuality": {
+                "header": "Feature Matching Quality",
+                "description": "You can adjust the matching quality here. As quality increases, it uses more memory, processor, and the processing time increases proportionally with the quality."
+              },
+              "minNumFeatures": {
+                "header": "Minimum Matching Number",
+                "description": "You can set the minimum number of matches for each image. Increasing the minimum matching number can be helpful to find more matches between images and enable the reconstruction of regions with little overlap or insufficient features. However, increasing the minimum matching number increases processing time."
+              },
+              "featureQualities": {
+                "ultra": "Ultra",
+                "high": "High",
+                "medium": "Medium",
+                "low": "Low",
+                "veryLow": "Very Low"
+              },
+              "recomSettings": "Recommended Settings"
+            }
+          },
+          "tabs": {
+            "pointCloud": "Point Cloud",
+            "meshModel": "Mesh Modal"
+          }
+        }
+      }
+    }
+  }
+}
