@@ -1,2 +1,2 @@
 # chat-app
-Electron , ReactJS ChatApp with NodeJS
+Electron , ReactJS ChatApp with NestJS
